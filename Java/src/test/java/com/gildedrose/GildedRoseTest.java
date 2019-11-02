@@ -12,7 +12,7 @@ import java.util.stream.IntStream;
 public class GildedRoseTest {
 
     @Test
-    public void testStoreIsCorrectAfterTenDays() {
+    public void testStoreStateIsCorrectAfterTwentyDays() {
         Item[] items = new Item[]{
                 new Item("+5 Dexterity Vest", 10, 20), //
                 new Item("Aged Brie", 2, 0), //
