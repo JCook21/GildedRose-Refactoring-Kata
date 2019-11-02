@@ -13,7 +13,7 @@ public class GildedRoseTest {
 
     @Test
     public void testStoreStateIsCorrectAfterTwentyDays() {
-        Item[] items = new Item[]{
+        var items = new Item[]{
                 new Item("+5 Dexterity Vest", 10, 20), //
                 new Item("Aged Brie", 2, 0), //
                 new Item("Elixir of the Mongoose", 5, 7), //
@@ -26,7 +26,7 @@ public class GildedRoseTest {
         // Add it when you can!
         //new Item("Conjured Mana Cake", 3, 6)};
         List<String> results = new ArrayList<>();
-        GildedRose app = new GildedRose(items);
+        var app = new GildedRose(items);
 
         IntStream.rangeClosed(1, 20)
                 .forEach(day -> {
@@ -35,7 +35,7 @@ public class GildedRoseTest {
                             .collect(Collectors.toCollection(() -> results));
                     app.updateQuality();
                 });
-        String result = String.join("\n", results);
+        var result = String.join("\n", results);
 
         Approvals.verify(result);
     }
