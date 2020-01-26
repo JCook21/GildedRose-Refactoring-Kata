@@ -26,7 +26,7 @@ public class GildedRoseTest {
                 //new Item("Conjured Mana Cake", 3, 6),
                 new Item("Backstage passes to a TAFKAL80ETC concert", 5, 49)
         };
-        List<String> results = new ArrayList<>();
+        var results = new ArrayList<String>();
         var app = new GildedRose(items);
 
         IntStream.rangeClosed(1, 20)
