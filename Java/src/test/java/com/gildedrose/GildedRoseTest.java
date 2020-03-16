@@ -35,8 +35,8 @@ public class GildedRoseTest {
                             .collect(Collectors.toCollection(() -> results));
                     app.updateQuality();
                 });
-        var result = String.join("\n", results);
 
+        var result = String.join("\n", results);
         Approvals.verify(result);
     }
 }
