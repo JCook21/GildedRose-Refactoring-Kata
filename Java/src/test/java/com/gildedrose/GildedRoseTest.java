@@ -1,7 +1,8 @@
 package com.gildedrose;
 
+import org.junit.jupiter.api.Test;
+
 import org.approvaltests.Approvals;
-import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
